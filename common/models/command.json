@@ -1,0 +1,33 @@
+{
+  "name": "command",
+  "plural": "commads",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true,
+      "isArray": false
+    },
+    "script": {
+      "type": "string",
+      "required": false
+    },
+    "user_id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": false,
+      "isArray": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
